@@ -12,7 +12,7 @@ const width = Dimensions.get('screen').width;
 export default function Cesta({ topo, detalhes, botao, itens }) {
   return <>
     <FlatList
-      data={lista}
+      data={itens.lista}
       renderItem={Item}
       keyExtractor={({ nome }) => nome}
       ListHeaderComponent={() => {
